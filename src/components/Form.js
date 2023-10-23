@@ -29,7 +29,7 @@ export default function Form(props) {
 </div>
 <div className="container my-15" style={{color: props.mode==="light"?"black":"white"}} >
     <h1>Summary</h1>
-    <p><b>Total Words: </b>{text.split(" ").filter((e1)=>{return e1.length!=0}).length}<b> Total Characters: </b>{text.length} </p>
+    <p><b>Total Words: </b>{text.split(" ").filter((e1)=>{return e1.length!=0}).length}<b> Total Cdsfsdfharacters: </b>{text.length} </p>
     <h2>Preview: </h2>
     <p>{text}</p>
 </div>
