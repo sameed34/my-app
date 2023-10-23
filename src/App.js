@@ -4,7 +4,7 @@ import Form from './components/Form';
 import Alert from './components/Alert';
 import React, { useState } from 'react';
 import About from './components/About';
-import { BrowserRouter as Router, Route,Link, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route,Link, Routes } from 'react-router-dom';
  
 
 function App() {
@@ -33,14 +33,16 @@ show("Dark mode has been enabled", "danger");
   
   return (
     <>
-      <Router>
+      {/* /* <Router> */ }
         <Navbar title="TextUtils" show={show} mode={mode} change={change} />
         <Alert alert={alert} />
-        <Routes>
-          <Route path="/Form" element={<Form heading="Text Area" mode={mode} />} />
-          <Route path="/sameed" element={<About />} />
-        </Routes>
-      </Router>
+        <Form heading="Text Area" mode={mode} />
+        <About />
+        {/* <Routes> */}
+          {/* <Route path="/Form" element={<Form heading="Text Area" mode={mode} />} />
+          <Route path="/sameed" element={<About />} /> */}
+        {/* </Routes>
+      </Router> */}
      
     </>
   );
